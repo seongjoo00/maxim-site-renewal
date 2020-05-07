@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* skip_menu */
+.skip_menu{position: relative;}
+.skip_menu a{
+    position:absolute;top:-60px;left:0;
+    width:138px;
+    border:1px solid #49015b;
+    background:#333;text-align: center;
+    display: inline-block;padding: 6px;
+    color:#fff
+}
+.skip_menu a:active,.skip_menu a:focus{top:0px;z-index:1000;text-decoration:none;}
+
+body{width:100%;position: relative;background:#fffbf4;}
+/* header */
+.header{padding-top:10%;max-width:1200px;margin:0 auto 30px;}
+.header h1{width:135px;height:55px;margin: auto;}
+
+/* main */
+.login_form{width:300px;margin: auto;}
+.login_form fieldset legend{position: absolute;top:-9999px;left:-9999px}
+.login_form fieldset h2{font-size:25px;font-weight: bold;letter-spacing: 5px;margin-bottom: 10px;text-align: center;}
+.login_form fieldset .txt{font-size:18px;letter-spacing: 2px;margin-bottom: 10px;text-align: center;margin-bottom: 35px;}
+.login_form fieldset .label{position: absolute;top:-9999px;left:-9999px}
+.login_form fieldset .login_input{
+    width:300px;height:40px;
+    border:1px solid #a3958f;
+    padding:0 15px;box-sizing: border-box;
+    margin-bottom: 15px;
+    border-radius :5px;
+}
+.login_form fieldset .login_input:focus{outline:1px solid #53382d;}
+/* login_check */
+.login_check{margin-bottom:15px}
+.login_check input[type="checkbox"]{display: none;}
+.login_check input[type="checkbox"]+label span{
+    width:18px;height:18px;
+    background:url('../images/login_check_off.png') no-repeat;
+    display:inline-block;
+    margin-right:6px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.login_check input[type="checkbox"]:checked+label span{
+    width:18px;height:18px;
+    background:url('../images/login_check_on.png') no-repeat;
+    vertical-align: middle;
+}
+
+/* button */
+.login_form fieldset .login_btn{
+    width:300px;height:50px;
+    background:#53382d;
+    color:#fff;
+    font-size:20px;font-weight:bold;
+    letter-spacing: 5px;
+    border:none;
+    margin-bottom:15px;
+    cursor: pointer;
+    border-radius :5px;
+}
+.login_search{text-align: center;margin-bottom: 30px;}
+.login_search .search_id{margin-right: 31px;position: relative;}
+.login_search .search_id::after{content: "";width:1px;height:12px;position: absolute;top:4px;left:77px;background:#53382d}
+.login_search .search_pwd{margin-right: 28px;position: relative;}
+.login_search .search_pwd::after{content: "";width:1px;height:12px;position: absolute;top:4px;left:90px;background:#53382d}
+
+.footer h2{position: absolute;top:-9999px;left:-9999px}
+.footer .copy_right{text-align: center;}
+.login_search a:hover{text-decoration: underline;}
